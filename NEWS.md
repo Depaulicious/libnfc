@@ -1,3 +1,17 @@
+New in 1.7.x:
+
+API Changes:
+
+  * nfc_device_get_supported_baud_rate() now takes also "mode" as argument
+  * New nfc_get_supported_baud_rate_target_mode()
+
+New in 1.7.1:
+
+API Changes:
+
+  * nfc_initiator_select_passive_target() provides defaults if pbtInitData=NULL
+  * nfc_initiator_target_is_present() allow NULL pointer to tag
+
 New in 1.7.0:
 
 Drivers:
