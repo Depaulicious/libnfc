@@ -239,7 +239,7 @@ pn53x_usb_get_device_model(uint16_t vendor_id, uint16_t product_id)
 }
 
 static void
-pn53x_usb_get_end_points_default(struct usb_device *dev, struct pn53x_usb_data *data)
+pn53x_usb_get_end_points_default(struct usbbus_device *dev, struct pn53x_usb_data *data)
 {
   for (size_t n = 0; n < sizeof(pn53x_usb_supported_devices) / sizeof(struct pn53x_usb_supported_device); n++) {
     if ((dev->descriptor.idVendor == pn53x_usb_supported_devices[n].vendor_id) &&
